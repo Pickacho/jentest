@@ -9,6 +9,6 @@ node{
     }
  ]
 }"""
-sh label: '', script: 'scp cloud_user@34.248.191.20:/tmp/file.txt  /tmp/file.txt'
+sh label: '', script: 'scp cloud_user@172.31.105.189:/tmp/file.txt  /tmp/file.txt'
 server.upload spec: uploadSpec
 }
