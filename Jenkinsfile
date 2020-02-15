@@ -11,6 +11,6 @@ node{
 }"""
 sh label: '', script: 'echo $HOSTNAME'
 sh label: '', script: 'ifconfig |grep inet |grep -v inet6 |grep -v 127.0.0.1'
-sh label: '', script: 'scp cloud_user@172.31.105.189:/tmp/file1.txt  /tmp/file.txt'
+sh label: '', script: 'scp cloud_user@localhost:/tmp/file1.txt  /tmp/file.txt'
 server.upload spec: uploadSpec
 }
